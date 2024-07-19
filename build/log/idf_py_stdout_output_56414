@@ -1,0 +1,7 @@
+[1/4] cd /home/vaibhav/esp/my_first_esp_project/build/esp-idf/esptool_py && /home/vaibhav/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/vaibhav/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/vaibhav/esp/my_first_esp_project/build/partition_table/partition-table.bin /home/vaibhav/esp/my_first_esp_project/build/my_first_esp_project.bin
+my_first_esp_project.bin binary size 0xea9f0 bytes. Smallest app partition is 0x100000 bytes. 0x15610 bytes (8%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/vaibhav/esp/my_first_esp_project/build/bootloader/esp-idf/esptool_py && /home/vaibhav/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/vaibhav/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/vaibhav/esp/my_first_esp_project/build/bootloader/bootloader.bin
+Bootloader binary size 0x5170 bytes. 0x2e90 bytes (36%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'
