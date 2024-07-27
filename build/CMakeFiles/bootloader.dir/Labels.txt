@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-/home/vaibhav/esp/my_first_esp_project/build/CMakeFiles/bootloader
-/home/vaibhav/esp/my_first_esp_project/build/CMakeFiles/bootloader.rule
-/home/vaibhav/esp/my_first_esp_project/build/CMakeFiles/bootloader-complete.rule
-/home/vaibhav/esp/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-/home/vaibhav/esp/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-/home/vaibhav/esp/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-/home/vaibhav/esp/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-/home/vaibhav/esp/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-/home/vaibhav/esp/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-/home/vaibhav/esp/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/vaibhav/my_first_esp_project/build/CMakeFiles/bootloader
+/home/vaibhav/my_first_esp_project/build/CMakeFiles/bootloader.rule
+/home/vaibhav/my_first_esp_project/build/CMakeFiles/bootloader-complete.rule
+/home/vaibhav/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/vaibhav/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/vaibhav/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/vaibhav/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/vaibhav/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/vaibhav/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/vaibhav/my_first_esp_project/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

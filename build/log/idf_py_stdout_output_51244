@@ -1,0 +1,116 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jul 19 2024 15:15:41[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (33) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (90) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=25bd4h (154580) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00035bfc vaddr=3fc91a00 size=02ac8h ( 10952) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000386cc vaddr=40380000 size=0794ch ( 31052) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b1800h (727040) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000f1828 vaddr=4038794c size=09fe4h ( 40932) load[0m
+[0;32mI (264) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (264) boot: Disabling RNG early entropy source...[0m
+[0;32mI (276) cpu_start: Unicore app[0m
+[0;32mI (284) cpu_start: Pro cpu start user code[0m
+[0;32mI (284) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) cpu_start: Application information:[0m
+[0;32mI (287) cpu_start: Project name:     my_first_esp_project[0m
+[0;32mI (294) cpu_start: App version:      c0a9e53-dirty[0m
+[0;32mI (299) cpu_start: Compile time:     Jul 19 2024 15:06:03[0m
+[0;32mI (305) cpu_start: ELF file SHA256:  b599ed270...[0m
+[0;32mI (310) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (315) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (320) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (325) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (330) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (337) heap_init: At 3FC98B70 len 00027490 (157 KiB): RAM[0m
+[0;32mI (343) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (350) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (357) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (364) spi_flash: detected chip: generic[0m
+[0;32mI (368) spi_flash: flash io: dio[0m
+[0;33mW (372) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (385) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (392) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (399) main_task: Started on CPU0[0m
+[0;32mI (399) main_task: Calling app_main()[0m
+[0;32mI (409) pp: pp rom version: 9387209[0m
+[0;32mI (409) net80211: net80211 rom version: 9387209[0m
+I (419) wifi:wifi driver task: 3fca1750, prio:23, stack:6656, core=0
+I (419) wifi:wifi firmware version: 3e0076f
+I (419) wifi:wifi certification version: v7.0
+I (429) wifi:config NVS flash: enabled
+I (429) wifi:config nano formating: disabled
+I (429) wifi:Init data frame dynamic rx buffer num: 32
+I (439) wifi:Init static rx mgmt buffer num: 5
+I (439) wifi:Init management short buffer num: 32
+I (449) wifi:Init dynamic tx buffer num: 32
+I (449) wifi:Init static tx FG buffer num: 2
+I (459) wifi:Init static rx buffer size: 1600
+I (459) wifi:Init static rx buffer num: 10
+I (459) wifi:Init dynamic rx buffer num: 32
+[0;32mI (469) wifi_init: rx ba win: 6[0m
+[0;32mI (469) wifi_init: tcpip mbox: 32[0m
+[0;32mI (479) wifi_init: udp mbox: 6[0m
+[0;32mI (479) wifi_init: tcp mbox: 6[0m
+[0;32mI (479) wifi_init: tcp tx win: 5760[0m
+[0;32mI (489) wifi_init: tcp rx win: 5760[0m
+[0;32mI (489) wifi_init: tcp mss: 1440[0m
+[0;32mI (489) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (499) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (509) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (539) wifi:mode : sta (dc:da:0c:d2:f6:70)
+I (539) wifi:enable tsf
+[0;32mI (549) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (549) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (549) esp-tls: Failed to open new connection[0m
+[0;31mE (559) transport_base: Failed to open a new connection[0m
+I (549) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (569) wifi:state: init -> auth (b0)
+[0;31mE (569) mqtt_client: Error transport connect[0m
+[0;32mI (579) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (579) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+I (579) wifi:state: auth -> assoc (0)
+I (599) wifi:state: assoc -> run (10)
+I (629) wifi:<ba-add>idx:0 (ifx:0, 3c:47:11:88:cf:61), tid:5, ssn:0, winSize:64
+I (679) wifi:connected with AIRTEL_E5172_CF61, aid = 6, channel 11, BW20, bssid = 3c:47:11:88:cf:61
+I (679) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (679) wifi:pm start, type: 1
+
+I (679) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (689) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (699) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (729) wifi:<ba-add>idx:1 (ifx:0, 3c:47:11:88:cf:61), tid:0, ssn:0, winSize:64
+[0;32mI (1709) esp_netif_handlers: sta ip: 192.168.1.9, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10589) MQTT_EXAMPLE: Other event id: 7[0m
+[0;32mI (12879) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (13189) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED[0m
+[0;32mI (13489) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED[0m
+[0;32mI (13799) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (14099) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (14619) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (23219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (28239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (33249) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (38179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (43189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (48209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (53219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m

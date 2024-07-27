@@ -1,4 +1,4 @@
-# Install script for directory: /home/vaibhav/esp/my_first_esp_project/main
+# Install script for directory: /home/vaibhav/my_first_esp_project/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

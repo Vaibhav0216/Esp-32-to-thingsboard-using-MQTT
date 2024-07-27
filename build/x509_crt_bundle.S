@@ -1,4 +1,4 @@
-/* * Data converted from /home/vaibhav/esp/my_first_esp_project/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/vaibhav/my_first_esp_project/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
