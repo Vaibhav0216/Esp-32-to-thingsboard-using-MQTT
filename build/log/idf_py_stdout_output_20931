@@ -1,0 +1,599 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jul 19 2024 15:15:41[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (33) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (90) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=25bcch (154572) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00035bf4 vaddr=3fc91a00 size=02ac8h ( 10952) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000386c4 vaddr=40380000 size=07954h ( 31060) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b1800h (727040) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000f1828 vaddr=40387954 size=09fdch ( 40924) load[0m
+[0;32mI (264) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (264) boot: Disabling RNG early entropy source...[0m
+[0;32mI (276) cpu_start: Unicore app[0m
+[0;32mI (284) cpu_start: Pro cpu start user code[0m
+[0;32mI (284) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (285) cpu_start: Application information:[0m
+[0;32mI (287) cpu_start: Project name:     my_first_esp_project[0m
+[0;32mI (294) cpu_start: App version:      f968a53-dirty[0m
+[0;32mI (299) cpu_start: Compile time:     Jul 29 2024 17:19:58[0m
+[0;32mI (305) cpu_start: ELF file SHA256:  c974acf36...[0m
+[0;32mI (310) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (315) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (320) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (325) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (330) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (337) heap_init: At 3FC98B70 len 00027490 (157 KiB): RAM[0m
+[0;32mI (343) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (350) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (357) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (364) spi_flash: detected chip: generic[0m
+[0;32mI (368) spi_flash: flash io: dio[0m
+[0;33mW (372) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (385) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (392) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (399) main_task: Started on CPU0[0m
+[0;32mI (399) main_task: Calling app_main()[0m
+[0;32mI (409) pp: pp rom version: 9387209[0m
+[0;32mI (409) net80211: net80211 rom version: 9387209[0m
+I (419) wifi:wifi driver task: 3fca1750, prio:23, stack:6656, core=0
+I (419) wifi:wifi firmware version: 3e0076f
+I (419) wifi:wifi certification version: v7.0
+I (429) wifi:config NVS flash: enabled
+I (429) wifi:config nano formating: disabled
+I (429) wifi:Init data frame dynamic rx buffer num: 32
+I (439) wifi:Init static rx mgmt buffer num: 5
+I (439) wifi:Init management short buffer num: 32
+I (449) wifi:Init dynamic tx buffer num: 32
+I (449) wifi:Init static tx FG buffer num: 2
+I (459) wifi:Init static rx buffer size: 1600
+I (459) wifi:Init static rx buffer num: 10
+I (459) wifi:Init dynamic rx buffer num: 32
+[0;32mI (469) wifi_init: rx ba win: 6[0m
+[0;32mI (469) wifi_init: tcpip mbox: 32[0m
+[0;32mI (479) wifi_init: udp mbox: 6[0m
+[0;32mI (479) wifi_init: tcp mbox: 6[0m
+[0;32mI (479) wifi_init: tcp tx win: 5760[0m
+[0;32mI (489) wifi_init: tcp rx win: 5760[0m
+[0;32mI (489) wifi_init: tcp mss: 1440[0m
+[0;32mI (489) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (499) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (509) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (549) wifi:mode : sta (dc:da:0c:d2:f6:70)
+I (549) wifi:enable tsf
+[0;32mI (549) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (549) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (559) esp-tls: Failed to open new connection[0m
+[0;31mE (559) transport_base: Failed to open a new connection[0m
+[0;31mE (569) mqtt_client: Error transport connect[0m
+[0;32mI (569) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (579) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+I (559) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (589) wifi:state: init -> auth (b0)
+I (589) wifi:state: auth -> assoc (0)
+I (599) wifi:state: assoc -> run (10)
+I (619) wifi:<ba-add>idx:0 (ifx:0, 3c:47:11:88:cf:61), tid:5, ssn:0, winSize:64
+I (649) wifi:connected with AIRTEL_E5172_CF61, aid = 2, channel 10, BW20, bssid = 3c:47:11:88:cf:61
+I (649) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (659) wifi:pm start, type: 1
+
+I (659) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (669) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (679) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (689) wifi:<ba-add>idx:1 (ifx:0, 3c:47:11:88:cf:61), tid:0, ssn:0, winSize:64
+[0;32mI (1679) esp_netif_handlers: sta ip: 192.168.1.3, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10589) MQTT_EXAMPLE: Other event id: 7[0m
+[0;32mI (12869) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (13179) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED[0m
+[0;32mI (13489) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED[0m
+[0;32mI (13489) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (13799) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (14099) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (18199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (23219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (28239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (33149) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (38169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (43189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (48199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (53429) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (58239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (63149) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (68169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (73289) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (78209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (83219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (88239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (93159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (98169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (103189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (108209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (113229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (118239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (123159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (128179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (133199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (138209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (143229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (148149) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (153169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (158179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (163199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (168219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (173229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (178249) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (183169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (188179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (193199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (198219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (203239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (208149) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (213169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (218189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (223409) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (228429) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (233239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (238159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (243169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (248189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (253209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (258229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (263139) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (268159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (273179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (278199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (283209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (288229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (293249) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (298159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (303179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (308199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (313219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (318239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (323249) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (328169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (333179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (338199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (343219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (348239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (353149) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (358579) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (363289) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (368409) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (373239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (378249) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (383149) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (388169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (393189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (398219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (403229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (408249) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (413159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (418179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (423189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (428219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (433229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (438249) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (443159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (448179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (453199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (458219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (463229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (468379) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (473169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (478179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (483199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (488219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (493239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (498149) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (503169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (508299) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (513199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (518219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (523139) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (528269) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (533169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (538189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (543209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (548229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (553239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (558159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (563179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (568189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (573209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (578229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (583139) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (588169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (593179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (598199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (603209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (608229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (613149) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (618169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (623179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (628199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (633219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (638239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (643159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (648169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (653189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (658209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (663219) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (668239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (673359) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (678169) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (683189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (688209) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (693229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (698239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (704999) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (708279) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (713189) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (718929) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (723329) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (728449) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (733779) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (738899) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (746579) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (752839) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (754669) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (758559) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (768079) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (768909) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (773709) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (778529) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (783539) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (788259) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (793579) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (798389) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (803609) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (808429) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (813649) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (818669) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (823679) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (828299) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (833309) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (838229) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (843239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (848569) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (853689) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (858809) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (863519) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (868859) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (873349) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (878879) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (883489) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (888199) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (893419) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (898639) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (903249) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (908879) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (913899) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (919019) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (923319) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (928239) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (933769) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (938579) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (943389) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (948309) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (953529) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (958339) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (963969) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (968579) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (973699) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (978929) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (983939) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (988859) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (993469) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (998179) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (1003399) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (1008309) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (1013359) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (1018549) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (1023159) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (1028489) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (1033709) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+[0;32mI (1038829) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED[0m
+I (1054869) wifi:bcn_timeout,ap_probe_send_start
+I (1064089) wifi:bcn_timeout,ap_probe_send_start
+I (1066599) wifi:ap_probe_send over, resett wifi status to disassoc
+I (1066599) wifi:state: run -> init (c800)
+I (1066599) wifi:pm stop, total sleep time: 927480323 us / 1065938423 us
+
+I (1066599) wifi:<ba-del>idx:1, tid:0
+I (1066599) wifi:<ba-del>idx:0, tid:5
+I (1066609) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+[0;31mE (1066619) transport_base: poll_write select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;33mW (1066629) transport_base: Poll timeout or error, errno=Connection already in progress, fd=54, timeout_ms=10000[0m
+[0;31mE (1066639) mqtt_client: Writing failed: errno=119[0m
+[0;32mI (1066639) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (1066649) mqtt_client: Error to resend data [0m
+[0;32mI (1066649) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (1076669) transport_base: Poll timeout or error, errno=Socket is not connected, fd=-1, timeout_ms=10000[0m
+[0;31mE (1076669) mqtt_client: Writing didn't complete in specified timeout: errno=128[0m
+[0;31mE (1076669) mqtt_client: Error sending ping[0m
+[0;31mE (1076679) mqtt_client: Can't send ping, disconnected[0m
+[0;32mI (1076679) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1086689) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1100689) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1100689) esp-tls: Failed to open new connection[0m
+[0;31mE (1100689) transport_base: Failed to open a new connection[0m
+[0;31mE (1100699) mqtt_client: Error transport connect[0m
+[0;32mI (1100699) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1100709) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1115709) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1129709) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1129709) esp-tls: Failed to open new connection[0m
+[0;31mE (1129709) transport_base: Failed to open a new connection[0m
+[0;31mE (1129719) mqtt_client: Error transport connect[0m
+[0;32mI (1129719) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1129729) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1144729) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1158729) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1158729) esp-tls: Failed to open new connection[0m
+[0;31mE (1158729) transport_base: Failed to open a new connection[0m
+[0;31mE (1158739) mqtt_client: Error transport connect[0m
+[0;32mI (1158739) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1158749) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1173749) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1187749) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1187749) esp-tls: Failed to open new connection[0m
+[0;31mE (1187749) transport_base: Failed to open a new connection[0m
+[0;31mE (1187759) mqtt_client: Error transport connect[0m
+[0;32mI (1187759) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1187769) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1202769) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1216769) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1216769) esp-tls: Failed to open new connection[0m
+[0;31mE (1216769) transport_base: Failed to open a new connection[0m
+[0;31mE (1216779) mqtt_client: Error transport connect[0m
+[0;32mI (1216779) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1216789) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1231789) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1245789) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1245789) esp-tls: Failed to open new connection[0m
+[0;31mE (1245789) transport_base: Failed to open a new connection[0m
+[0;31mE (1245799) mqtt_client: Error transport connect[0m
+[0;32mI (1245799) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1245809) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1260809) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1274809) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1274809) esp-tls: Failed to open new connection[0m
+[0;31mE (1274809) transport_base: Failed to open a new connection[0m
+[0;31mE (1274819) mqtt_client: Error transport connect[0m
+[0;32mI (1274819) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1274829) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1289829) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1303829) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1303829) esp-tls: Failed to open new connection[0m
+[0;31mE (1303829) transport_base: Failed to open a new connection[0m
+[0;31mE (1303839) mqtt_client: Error transport connect[0m
+[0;32mI (1303839) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1303849) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1318849) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1332849) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1332849) esp-tls: Failed to open new connection[0m
+[0;31mE (1332849) transport_base: Failed to open a new connection[0m
+[0;31mE (1332859) mqtt_client: Error transport connect[0m
+[0;32mI (1332859) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1332869) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1347869) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1361869) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1361869) esp-tls: Failed to open new connection[0m
+[0;31mE (1361869) transport_base: Failed to open a new connection[0m
+[0;31mE (1361879) mqtt_client: Error transport connect[0m
+[0;32mI (1361879) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1361889) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1376889) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1390889) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1390889) esp-tls: Failed to open new connection[0m
+[0;31mE (1390889) transport_base: Failed to open a new connection[0m
+[0;31mE (1390899) mqtt_client: Error transport connect[0m
+[0;32mI (1390899) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1390909) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1405909) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1419909) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1419909) esp-tls: Failed to open new connection[0m
+[0;31mE (1419909) transport_base: Failed to open a new connection[0m
+[0;31mE (1419919) mqtt_client: Error transport connect[0m
+[0;32mI (1419919) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1419929) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1434929) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1448929) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1448929) esp-tls: Failed to open new connection[0m
+[0;31mE (1448929) transport_base: Failed to open a new connection[0m
+[0;31mE (1448939) mqtt_client: Error transport connect[0m
+[0;32mI (1448939) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1448949) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1463949) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1477949) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1477949) esp-tls: Failed to open new connection[0m
+[0;31mE (1477949) transport_base: Failed to open a new connection[0m
+[0;31mE (1477959) mqtt_client: Error transport connect[0m
+[0;32mI (1477959) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1477969) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1492969) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1506969) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1506969) esp-tls: Failed to open new connection[0m
+[0;31mE (1506969) transport_base: Failed to open a new connection[0m
+[0;31mE (1506979) mqtt_client: Error transport connect[0m
+[0;32mI (1506979) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1506989) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1521989) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1535989) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1535989) esp-tls: Failed to open new connection[0m
+[0;31mE (1535989) transport_base: Failed to open a new connection[0m
+[0;31mE (1535999) mqtt_client: Error transport connect[0m
+[0;32mI (1535999) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1536009) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1551009) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1565009) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1565009) esp-tls: Failed to open new connection[0m
+[0;31mE (1565009) transport_base: Failed to open a new connection[0m
+[0;31mE (1565019) mqtt_client: Error transport connect[0m
+[0;32mI (1565019) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1565029) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1580029) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1594029) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1594029) esp-tls: Failed to open new connection[0m
+[0;31mE (1594029) transport_base: Failed to open a new connection[0m
+[0;31mE (1594039) mqtt_client: Error transport connect[0m
+[0;32mI (1594039) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1594049) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1609049) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1623049) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1623049) esp-tls: Failed to open new connection[0m
+[0;31mE (1623049) transport_base: Failed to open a new connection[0m
+[0;31mE (1623059) mqtt_client: Error transport connect[0m
+[0;32mI (1623059) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1623069) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1638069) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1652069) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1652069) esp-tls: Failed to open new connection[0m
+[0;31mE (1652069) transport_base: Failed to open a new connection[0m
+[0;31mE (1652079) mqtt_client: Error transport connect[0m
+[0;32mI (1652079) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1652089) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1667089) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1681089) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1681089) esp-tls: Failed to open new connection[0m
+[0;31mE (1681089) transport_base: Failed to open a new connection[0m
+[0;31mE (1681099) mqtt_client: Error transport connect[0m
+[0;32mI (1681099) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1681109) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1696109) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1710109) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1710109) esp-tls: Failed to open new connection[0m
+[0;31mE (1710109) transport_base: Failed to open a new connection[0m
+[0;31mE (1710119) mqtt_client: Error transport connect[0m
+[0;32mI (1710119) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1710129) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1725129) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1739129) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1739129) esp-tls: Failed to open new connection[0m
+[0;31mE (1739129) transport_base: Failed to open a new connection[0m
+[0;31mE (1739139) mqtt_client: Error transport connect[0m
+[0;32mI (1739139) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1739149) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1754149) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1768149) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1768149) esp-tls: Failed to open new connection[0m
+[0;31mE (1768149) transport_base: Failed to open a new connection[0m
+[0;31mE (1768159) mqtt_client: Error transport connect[0m
+[0;32mI (1768159) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1768169) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1783169) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1797169) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1797169) esp-tls: Failed to open new connection[0m
+[0;31mE (1797169) transport_base: Failed to open a new connection[0m
+[0;31mE (1797179) mqtt_client: Error transport connect[0m
+[0;32mI (1797179) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1797189) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1812189) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1826189) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1826189) esp-tls: Failed to open new connection[0m
+[0;31mE (1826189) transport_base: Failed to open a new connection[0m
+[0;31mE (1826199) mqtt_client: Error transport connect[0m
+[0;32mI (1826199) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1826209) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1841209) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1855209) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1855209) esp-tls: Failed to open new connection[0m
+[0;31mE (1855209) transport_base: Failed to open a new connection[0m
+[0;31mE (1855219) mqtt_client: Error transport connect[0m
+[0;32mI (1855219) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1855229) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1870229) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1884229) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1884229) esp-tls: Failed to open new connection[0m
+[0;31mE (1884229) transport_base: Failed to open a new connection[0m
+[0;31mE (1884239) mqtt_client: Error transport connect[0m
+[0;32mI (1884239) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1884249) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1899249) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1913249) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1913249) esp-tls: Failed to open new connection[0m
+[0;31mE (1913249) transport_base: Failed to open a new connection[0m
+[0;31mE (1913259) mqtt_client: Error transport connect[0m
+[0;32mI (1913259) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1913269) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1928269) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1942269) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1942269) esp-tls: Failed to open new connection[0m
+[0;31mE (1942269) transport_base: Failed to open a new connection[0m
+[0;31mE (1942279) mqtt_client: Error transport connect[0m
+[0;32mI (1942279) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1942289) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1957289) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (1971289) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1971289) esp-tls: Failed to open new connection[0m
+[0;31mE (1971289) transport_base: Failed to open a new connection[0m
+[0;31mE (1971299) mqtt_client: Error transport connect[0m
+[0;32mI (1971299) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (1971309) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1986309) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (2000309) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2000309) esp-tls: Failed to open new connection[0m
+[0;31mE (2000309) transport_base: Failed to open a new connection[0m
+[0;31mE (2000319) mqtt_client: Error transport connect[0m
+[0;32mI (2000319) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (2000329) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2015329) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (2029329) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2029329) esp-tls: Failed to open new connection[0m
+[0;31mE (2029329) transport_base: Failed to open a new connection[0m
+[0;31mE (2029339) mqtt_client: Error transport connect[0m
+[0;32mI (2029339) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (2029349) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2044349) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (2058349) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2058349) esp-tls: Failed to open new connection[0m
+[0;31mE (2058349) transport_base: Failed to open a new connection[0m
+[0;31mE (2058359) mqtt_client: Error transport connect[0m
+[0;32mI (2058359) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (2058369) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2073369) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (2087369) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2087369) esp-tls: Failed to open new connection[0m
+[0;31mE (2087369) transport_base: Failed to open a new connection[0m
+[0;31mE (2087379) mqtt_client: Error transport connect[0m
+[0;32mI (2087379) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (2087389) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2102389) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (2116389) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2116389) esp-tls: Failed to open new connection[0m
+[0;31mE (2116389) transport_base: Failed to open a new connection[0m
+[0;31mE (2116399) mqtt_client: Error transport connect[0m
+[0;32mI (2116399) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (2116409) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2131409) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (2145409) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2145409) esp-tls: Failed to open new connection[0m
+[0;31mE (2145409) transport_base: Failed to open a new connection[0m
+[0;31mE (2145419) mqtt_client: Error transport connect[0m
+[0;32mI (2145419) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (2145429) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (2160429) MQTT_EXAMPLE: Other event id: 7[0m
+[0;31mE (2174429) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2174429) esp-tls: Failed to open new connection[0m
+[0;31mE (2174429) transport_base: Failed to open a new connection[0m
+[0;31mE (2174439) mqtt_client: Error transport connect[0m
+[0;32mI (2174439) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (2174449) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m

@@ -21,7 +21,9 @@
 
 // MQTT Broker URI for secure connection
 #define MQTT_BROKER_URI "mqtts://thingsboard.cloud:8883"
-#define ACCESS_TOKEN "7rYAbn0Rp0T6tAdQ1fXe"
+// #define ACCESS_TOKEN "7rYAbn0Rp0T6tAdQ1fXe"
+#define ACCESS_TOKEN "CPUTIGrx9IxC1IQe5m0M"
+
 
 static const char *TAG = "MQTT_EXAMPLE";
 
